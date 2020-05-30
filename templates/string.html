@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% include 'main.html' %}
+    <div class="container">
+      <h1>WELCOME TO THE STRING OPERATIONS</h1>
+      <h3>ENTER YOUR TEXT BELOW</h3>
+      <form action="/remove" method="get">
+        <textarea name="text" rows="8" cols="80"></textarea><br>
+        <label class="switch">
+          <input type="checkbox"name="removepunc">
+          <span class="slider round"></span>
+        </label>
+        <h4 style="float:left; ">Remove punctuation  &nbsp;</h4>
+        <br>
+        <label class="switch">
+          <input type="checkbox"name="upper">
+          <span class="slider round"></span>
+        </label>
+        <h4 style="float:left; ">Change in Upper &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; </h4>
+        <br>
+        <label class="switch">
+          <input type="checkbox"name="lower">
+          <span class="slider round"></span>
+        </label>
+        <h4 style="float:left; ">Change in Lower &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; </h4>
+        <br>
+        <label class="switch">
+          <input type="checkbox"name="title">
+          <span class="slider round"></span>
+        </label>
+        <h4 style="float:left; ">Change in Title &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h4>
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
